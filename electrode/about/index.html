@@ -1,0 +1,1810 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Development guides for CogniPilot">
+      
+      
+        <meta name="author" content="CogniPilot Foundation">
+      
+      
+        <link rel="canonical" href="https://brave.cognipilot.org/electrode/about/">
+      
+      
+        <link rel="prev" href="../../dream/worlds/worlds/">
+      
+      
+        <link rel="next" href="../../helmet/about/">
+      
+      
+      <link rel="icon" href="../../assets/CogniPilotLogoFavicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>About - Brave Dev Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/cognipilot-palette.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#about-electrode" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Brave Dev Guide" class="md-header__button md-logo" aria-label="Brave Dev Guide" data-md-component="logo">
+      
+  <img src="../../assets/CogniPilotLogoSite.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Brave Dev Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              About
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CogniPilot/brave_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CogniPilot/brave_docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Brave Dev Guide" class="md-nav__button md-logo" aria-label="Brave Dev Guide" data-md-component="logo">
+      
+  <img src="../../assets/CogniPilotLogoSite.png" alt="logo">
+
+    </a>
+    Brave Dev Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CogniPilot/brave_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CogniPilot/brave_docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_started/install/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cerebri
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Cerebri
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cerebri/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Boards
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Boards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cerebri/boards/nxp_vmu_rt1170/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NXP® VMU RT1170
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cerebri/boards/nxp_mr_canhubk3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NXP® MR CANHUBK3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Platforms
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Platforms
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cerebri/platforms/rovers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rovers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Cranium
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Cranium
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cranium/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cranium/corti/corti/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Corti
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cranium/synapse/synapse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Synapse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Compute Hardware
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            Compute Hardware
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4_1" id="__nav_4_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    NXP® NavQPlus
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            NXP® NavQPlus
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cranium/compute/navqplus/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Dream
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Dream
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dream/worlds/worlds/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Worlds
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electrode
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Electrode
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foxglove-studio-backend-for-electrode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foxglove-studio backend for Electrode.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foxglove-studio backend for Electrode.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-foxglove-studio-and-the-foxglove-cognipilot-joystick-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install foxglove-studio and the foxglove CogniPilot Joystick extension
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rviz-2-backend-for-electrode" class="md-nav__link">
+    <span class="md-ellipsis">
+      RVIZ 2 backend for Electrode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#joy-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joy Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joy Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#joy-input-message-example-for-b3rb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joy input message example for B3RB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foxglove-cognipilot-joystick-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foxglove CogniPilot Joystick extension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-using-electrode-with-a-physical-joystick-for-b3rb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of using electrode with a physical joystick for B3RB.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example of using electrode with a physical joystick for B3RB.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selecting-a-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selecting a Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#front-lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Front Lights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-electrode-without-a-ros-2-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Electrode without a ROS 2 workspace
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Helmet
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Helmet
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helmet/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tools/cyecca/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cyecca
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference Systems
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Reference Systems
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    B3RB
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            B3RB
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/printable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Printable Parts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up the System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/status/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Status Lighting and Sounds
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/electrode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using with Electrode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/operate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Operating the platform
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference_systems/b3rb/simulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Running in Simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://cognipilot.org/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Releases
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#foxglove-studio-backend-for-electrode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foxglove-studio backend for Electrode.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Foxglove-studio backend for Electrode.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-foxglove-studio-and-the-foxglove-cognipilot-joystick-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install foxglove-studio and the foxglove CogniPilot Joystick extension
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rviz-2-backend-for-electrode" class="md-nav__link">
+    <span class="md-ellipsis">
+      RVIZ 2 backend for Electrode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#joy-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joy Input
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Joy Input">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#joy-input-message-example-for-b3rb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Joy input message example for B3RB
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#foxglove-cognipilot-joystick-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      Foxglove CogniPilot Joystick extension
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-of-using-electrode-with-a-physical-joystick-for-b3rb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example of using electrode with a physical joystick for B3RB.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example of using electrode with a physical joystick for B3RB.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#selecting-a-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selecting a Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arming" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arming
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#front-lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Front Lights
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-electrode-without-a-ros-2-workspace" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using Electrode without a ROS 2 workspace
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="about-electrode">About Electrode</h1>
+<p>Much like the name implies from the medical term, Electrode is the introspection and user interface to CogniPilot's <a href="../../cranium/about/">Cranium</a> and <a href="../../cerebri/about/">Cerebri</a>.</p>
+<p>Electrode is primarily a ROS 2 workspace that allows for controlling robotic platforms through either foxglove or RVIZ 2 backends.</p>
+<p>Electrode uses a <a href="#joy-input">joystick</a> whether (<a href="#foxglove-cognipilot-joystick-extension">virtual</a> or <a href="#example-of-using-electrode-with-a-physical-joystick-for-b3rb">physical</a>) to control platforms.</p>
+<p>Foxglove-studio is the <a href="#foxglove-studio-backend-for-electrode">recommended backend for Electrode</a>.</p>
+<details class="question">
+<summary>Do I have to use a ROS 2 workspace based Electrode to control platforms?</summary>
+<p>No, there is a way to <a href="#using-electrode-without-a-ros-2-workspace">use Electrode with foxglove and the CogniPilot extensions on windows and linux</a> that only uses websockets and does not require ROS 2 to be present on the system.</p>
+</details>
+<h2 id="foxglove-studio-backend-for-electrode">Foxglove-studio backend for Electrode.</h2>
+<p>By default Electrode uses foxglove-studio as the backend, for foxglove-studio to connect to a physical platform or simulation <code>foxglove_bridge</code> must be running first on the target system.</p>
+<h3 id="install-foxglove-studio-and-the-foxglove-cognipilot-joystick-extension">Install foxglove-studio and the <a href="#foxglove-cognipilot-joystick-extension">foxglove CogniPilot Joystick extension</a></h3>
+<p>Run the <code>build_foxglove</code> script after <a href="../../getting_started/install/">following initial development system setup</a> and <strong>follow the prompts</strong>.</p>
+<div class="language-bash highlight"><span class="filename">Run build_foxglove script:</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>build_foxglove
+</span></code></pre></div>
+<p>Proceed to using Electrode with foxglove-studio with the platforms specific layout:</p>
+<ul>
+<li><a href="../../reference_systems/b3rb/electrode/#using-the-default-electrode-foxglove-studio-backend-with-b3rb">B3RB</a> </li>
+<li><a href="../../reference_systems/b3rb/simulation/#run-electrode-with-the-foxglove-studio-backend-for-b3rb-simulation">B3RB Simulation</a></li>
+</ul>
+<h2 id="rviz-2-backend-for-electrode">RVIZ 2 backend for Electrode</h2>
+<p>Electrode can be optionally run with the RVIZ 2 backend, however, it requires a <a href="#example-of-using-electrode-with-a-physical-joystick-for-b3rb">physical joystick device</a> for input.
+<div class="language-bash highlight"><span class="filename">Electrode with RVIZ 2:</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>electrode<span class="w"> </span>electrode.launch.py<span class="w"> </span>rviz2:<span class="o">=</span><span class="nb">true</span>
+</span></code></pre></div>
+By default RVIZ 2 uses B3RB as the vehicle platform but can be changed with <code>vehicle:=&lt;platform-name&gt;</code></p>
+<ul>
+<li><a href="../../reference_systems/b3rb/electrode/#optionally-run-electrode-with-the-rviz-2-backend-for-b3rb">B3RB</a> </li>
+<li><a href="../../reference_systems/b3rb/simulation/#optionally-run-electrode-with-the-rviz-2-backend-for-b3rb-simulation">B3RB Simulation</a></li>
+</ul>
+<h2 id="joy-input">Joy Input</h2>
+<p>Any compatible <code>Joy</code> input can be used to control the platform.</p>
+<h3 id="joy-input-message-example-for-b3rb">Joy input message example for B3RB</h3>
+<p>The <code>sensor_msgs/Joy</code> message on topic <code>/cerebri/in/joy</code> controls the <code>b3rb</code>, inspect the message to see the field mappings.
+<div class="language-yaml annotate highlight"><span class="filename">ros2 topic echo /cerebri/in/joy</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nn">---</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">header</span><span class="p">:</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="nt">stamp</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">sec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">nanosec</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">frame_id</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nt">axes</span><span class="p">:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0</span><span class="w">      </span><span class="c1">#(1)</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0</span><span class="w">      </span><span class="c1">#(2)</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nt">buttons</span><span class="p">:</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(3)</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(4)</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(5)</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(6)</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(7)</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(8)</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(9)</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span><span class="w">        </span><span class="c1">#(10)</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="nn">---</span>
+</span></code></pre></div></p>
+<ol>
+<li><strong>Throttle</strong> in <span style="color:green; background-color:darkgray;"> <strong>Manual Mode</strong> </span>.</li>
+<li><strong>Steering</strong> in <span style="color:green; background-color:darkgray;"> <strong>Manual Mode</strong> </span>.</li>
+<li><span style="color:green; background-color:darkgray;"> <strong>Manual Mode</strong> </span></li>
+<li><span style="color:red; background-color:darkgray;"> <strong>Auto Mode</strong> </span></li>
+<li><span style="color:blue; background-color:darkgray;"> <strong>CMD_VEL Mode</strong> </span></li>
+<li><span style="color:yellow; background-color:darkgray;"> <strong>Calibration Mode</strong> </span></li>
+<li>Front Lights On</li>
+<li>Front Lights Off</li>
+<li><span style="color:green;"><strong>Disarm</strong></span></li>
+<li><span style="color:red;"><strong>Arm</strong></span></li>
+</ol>
+<h3 id="foxglove-cognipilot-joystick-extension">Foxglove CogniPilot Joystick extension</h3>
+<details class="tip" open="open">
+<summary>Install foxglove-studio and build the foxglove CogniPilot Joystick extension</summary>
+<p>Make sure to have first run the <code>build_foxglove</code> script at some point and <strong>follow the prompts</strong>.
+<div class="language-bash highlight"><span class="filename">Run build_foxglove script:</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>build_foxglove
+</span></code></pre></div></p>
+</details>
+<p>The foxglove CogniPilot Joystick extension allows users to control a platform without the need for a physical joystick.</p>
+<details class="picture" open="open">
+<summary>Using the CogniPilot Joystick extension in foxglove.</summary>
+<p>Use is simple, click the corresponding buttons to perform their actions. An example on B3RB, click and drag the smaller circle around for throttle (up/down) and steering (left/right).</p>
+<p><img alt="CogniPilot Joystick extension in foxglove." src="../images/foxglove_cognipilot_joystick_extension.png" title="CogniPilot Joystick extension in foxglove." /></p>
+</details>
+<details class="question">
+<summary>Can I still use a physical josytick with foxglove?</summary>
+<p>A physical Joystick can still be used with foxglove but it requires closing the <code>CogniPilot Joystick</code> panel that is automatically opened when importing a layout file like the <code>b3rb.json</code> layout and running electrode with <code>joy:=true</code>
+<div class="language-bash highlight"><span class="filename">Run Electrode with foxglove and physical joystick</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>electrode<span class="w"> </span>electrode.launch.py<span class="w"> </span>joy:<span class="o">=</span><span class="nb">true</span>
+</span></code></pre></div>
+<img alt="Remove CogniPilot Joystick extension from b3rb.json layout in foxglove." src="../images/foxglove_remove_b3rb_joy_extension.png" title="Remove CogniPilot Joystick extension from b3rb.json layout in foxglove." /></p>
+</details>
+<h3 id="example-of-using-electrode-with-a-physical-joystick-for-b3rb">Example of using electrode with a physical joystick for B3RB.</h3>
+<p>While most physical joysticks on the market can be made to work with ROS 2, this example highlights a <a href="https://www.logitechg.com/en-us/products/gamepads/f310-gamepad.940-000110.html">Logitech F310</a>.</p>
+<details class="picture">
+<summary>Logitech F310 button layout.</summary>
+<p><img alt="F310" src="../images/f310.png" title="F310" /></p>
+</details>
+<h4 id="selecting-a-mode">Selecting a Mode</h4>
+<ul>
+<li><span style="color:green; background-color:darkgray;"> <strong>A</strong> </span>: Manual Mode</li>
+<li><span style="color:blue; background-color:darkgray;"> <strong>X</strong> </span>: CMD_VEL Mode (nav2)</li>
+<li><span style="color:red; background-color:darkgray;"> <strong>B</strong> </span>: Auto Mode (other cmd_vel)</li>
+<li><span style="color:yellow; background-color:darkgray;"> <strong>Y</strong> </span>: Calibration Mode</li>
+</ul>
+<h4 id="arming">Arming</h4>
+<ul>
+<li><strong>START</strong>: arm</li>
+<li><strong>BACK</strong>: disarm</li>
+</ul>
+<h4 id="manual-mode">Manual Mode</h4>
+<ul>
+<li><strong>Left stick Up/Down</strong>: Throttle</li>
+<li><strong>Right stick Left/Right</strong>: Steering</li>
+</ul>
+<h4 id="front-lights">Front Lights</h4>
+<ul>
+<li><strong>LB</strong>: Front lights on</li>
+<li><strong>RB</strong>: Front lights off</li>
+</ul>
+<h2 id="using-electrode-without-a-ros-2-workspace">Using Electrode without a ROS 2 workspace</h2>
+<p>To use Electrode without ROS 2 on a system use foxglove-studio. </p>
+<ol>
+<li>
+<p><a href="https://foxglove.dev/download">Download the latest foxglove-studio for your system (Linux/Windows)</a> and install it.</p>
+<details class="warning">
+<summary>If using with linux only use debian installer.</summary>
+<p>Do not use the snap version, only follow instructions for debian linux install.</p>
+</details>
+</li>
+<li>
+<p>Download the <a href="https://github.com/CogniPilot/foxglove-cognipilot-joy/releases?q=brave&amp;expanded=true">latest foxglove-cognipilot-joy extension asset <code>cognipilot.cognipilot-joystick-&lt;version&gt;.zip</code>  for Brave</a>.</p>
+</li>
+<li>
+<p>Unzip compressed folder and put it in correct path for operating systems foxglove-studio.<br />
+  On Linux:
+    <div class="language-bash highlight"><span class="filename">Move and extract extension on Linux:</span><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.foxglove-studio/extensions
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mv<span class="w"> </span>&lt;path-to&gt;/cognipilot.cognipilot-joystick-*.zip<span class="w"> </span>~/.foxglove-studio/extensions
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="nb">cd</span><span class="w"> </span>~/.foxglove-studio/extensions
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>unzip<span class="w"> </span>cognipilot.cognipilot-joystick-*.zip
+</span></code></pre></div>
+    On Windows:</p>
+<ol>
+<li>Go to <code>Users/&lt;User&gt;/</code> and see if there is a .foxglove-studio/extensions folder, <a href="https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=Show%20%3E%20Hidden%20items.-,Open%20File%20Explorer%20from%20the%20taskbar.,folders%2C%20and%20drives%20and%20OK.">enable seeing hidden folders if not already enabled</a>. If the folder path exists proceed to step <code>d.</code>, if not continue with step <code>b.</code></li>
+<li>
+<p>Create a .foxglove-studio folder in <code>Users/&lt;User&gt;/</code>.</p>
+<details class="picture">
+<summary>Creating a .foxglove-studio folder <code>Users/&lt;User&gt;/</code>.</summary>
+<p><img alt="Creating a .foxglove-studio folder in Users/&lt;User&gt;/." src="../images/windows_foxglove-studio_folder.png" title="Creating a .foxglove-studio folder in Users/&lt;User&gt;/." /></p>
+</details>
+</li>
+<li>
+<p>Create an extensions folder in <code>Users/&lt;User&gt;/.foxglove-studio</code>.</p>
+<details class="picture">
+<summary>Creating an extensions folder in <code>Users/&lt;User&gt;/.foxglove-studio</code>.</summary>
+<p><img alt="Creating an extensions folder in Users/&lt;User&gt;/.foxglove-studio." src="../images/windows_extensions_folder.png" title="Creating an extensions folder in Users/&lt;User&gt;/.foxglove-studio." /></p>
+</details>
+</li>
+<li>
+<p>Go to location where <a href="https://github.com/CogniPilot/foxglove-cognipilot-joy/releases?q=brave&amp;expanded=true"><code>cognipilot.cognipilot-joystick-&lt;version&gt;.zip</code></a> was downloaded <code>right click the .zip</code> and select <code>Extract All...</code></p>
+<details class="picture">
+<summary>Select <code>Extract All...</code> on <code>cognipilot.cognipilot-joystick-&lt;version&gt;.zip</code>.</summary>
+<p><img alt="Select Extract All... on cognipilot.cognipilot-joystick-&lt;version&gt;.zip." src="../images/windows_extract.png" title="Select Extract All... on cognipilot.cognipilot-joystick-&lt;version&gt;.zip." /></p>
+</details>
+</li>
+<li>
+<p>Provide extraction path to <code>Users/&lt;User&gt;/.foxglove-studio/extensions</code> and press extract.</p>
+<details class="picture">
+<summary>Provide extraction path to <code>Users/&lt;User&gt;/.foxglove-studio/extensions</code>.</summary>
+<p><img alt="Provide extraction path to Users/&lt;User&gt;/.foxglove-studio/extensions." src="../images/windows_extract_to.png" title="Provide extraction path to Users/&lt;User&gt;/.foxglove-studio/extensions." /></p>
+</details>
+</li>
+</ol>
+</li>
+<li>
+<p>Download desired <a href="https://github.com/CogniPilot/electrode/tree/brave/foxglove_layouts">platform layout for foxglove by selecting the <code>&lt;robot&gt;.json</code> file on GitHub</a> and pressing the download icon.</p>
+<details class="picture">
+<summary>Example of downloading <code>b3rb.json</code> layout for foxglove.</summary>
+<p><img alt="Example of downloading b3rb.json layout for foxglove." src="../images/download_b3rb_layout.png" title="Example of downloading b3rb.json layout for foxglove." /></p>
+</details>
+</li>
+<li>
+<p>Open the foxglove-studio application.</p>
+</li>
+<li>
+<p>Connect foxglove-studio to the correct <code>foxglove_bridge</code> websocket's <code>ip address</code> and <code>port</code> in the format <code>ws://&lt;ip-address&gt;:&lt;port&gt;</code>.</p>
+<details class="picture">
+<summary>Connecting foxglove-studio to the correct <code>foxglove_bridge</code> websocket's <code>ip address</code> and <code>port</code>.</summary>
+<p><img alt="Connecting foxglove-studio to the correct foxglove_bridge websocket's ip address and port." src="../images/foxglove_set_websocket.png" title="Connecting foxglove-studio to the correct foxglove_bridge websocket's ip address and port." /></p>
+</details>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__highlight md-grid">
+      <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/CogniPilot" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/cognipilot" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+      <div class="md-footer-copyright">
+        
+            Copyright &copy; 2023 CogniPilot Foundation. All Rights Reserved.
+        
+      </div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
