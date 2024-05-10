@@ -41,8 +41,9 @@ chmod a+x ~/cognipilot/installer/install_cognipilot.sh
 
 ???+ tip "When prompted to choose a release:"
 
-    1. ***airy*** for a stable non-development release.
-    2. ***main*** for active development.
+    1. ***airy*** for a previous stable non-development release.
+    2. ***brave*** for the current stable non-development release.
+    3. ***main*** for active development.
 
 ???+ tip "When prompted to choose installer type select **1** for **native**:"
 
@@ -118,7 +119,7 @@ docs
 
 ???+ tip "When prompted to choose a doc to build:"
     
-    1. ***airy*** is the [airy developers guide site (airy.cognipilot.org)](https://airy.cognipilot.org).
+    1. ***brave*** is the [brave developers guide site (brave.cognipilot.org)](https://brave.cognipilot.org).
     2. ***overview*** is the [release overview site (cognipilot.org)](https://cognipilot.org).
 
 ??? question "I ran the command where are the docs?"

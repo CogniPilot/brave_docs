@@ -1,8 +1,8 @@
-# About Airy Alicanto
+# About Brave Bennu (COMING SOON)
 
-An [Alicanto](https://en.wikipedia.org/wiki/Alicanto) is a bird from  Chilean mythology known to eat gold or silver and then glow. The bird is incapable of flight after overindulging on ore.
+[Bennu](https://en.wikipedia.org/wiki/Bennu) is an ancient Egyptian deity linked with the Sun, creation, and rebirth. Typically shown in depictions as a heron like bird wearing a crown, Bennu is believed to have been the original inspiration for the phoenix legends that developed in Greek mythology.
 
-**Airy Alicanto** represents the origin of CogniPilot's light weight, and minimalistic software stack following a correct by construction software paradigm.
+**Brave Bennu** represents the next evolution of CogniPilot's light weight, and minimalistic software stack following a correct by construction software paradigm.
 
 ## Correct by Construction Design Drivers
 
@@ -18,9 +18,9 @@ CogniPilot is not aiming to re-invent an opensource autopilot that can be a drop
 
 
 ## Software Stack
-* Ubuntu 22.04
-* Zephyr RTOS 3.5
-* ROS 2 Humble
+* Ubuntu 24.04
+* Zephyr RTOS 3.7+
+* ROS 2 Jazzy
 * Gazebo Harmonic
 
 ## Currently supported platforms
@@ -28,16 +28,18 @@ CogniPilot is not aiming to re-invent an opensource autopilot that can be a drop
 ### Rover
    * [B3RB](./reference_systems/b3rb/about.md)
    * ELM4
+   * MELM
+### Multirotor
+   * RDD2
 
 ## Get started
 
 To get started follow the guide on [how to install on a computer](./getting_started/install.md).
 
 ## CogniPilot's next release
-To still be named, but going by B-Mythical (a mythical creature with a name starting with B) will have planned additional support for:
+To still be named, but going by C-Mythical (a mythical creature with a name starting with C) will have planned additional support for:
 
-### Mulirotor
-   * NXP RDDrone
+### Multirotor
    * TBD
 ### Submersible
    * TBD

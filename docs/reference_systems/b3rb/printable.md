@@ -14,7 +14,7 @@
 
 ??? interact "{{ keys }}"
 
-    <script src="https://embed.github.com/view/3d/{{ org }}/airy_docs/{{ branch }}/docs/{{ file.path }}/{{ file.name }}"></script>
+    <script src="https://embed.github.com/view/3d/{{ org }}/brave_docs/{{ branch }}/docs/{{ file.path }}/{{ file.name }}"></script>
 
 {% endif %}
 

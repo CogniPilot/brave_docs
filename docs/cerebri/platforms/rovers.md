@@ -1,6 +1,6 @@
 # Rovers Overview
 
-CogniPilot Airy currently supports rovers navigating in 2D environments. The B3RB and the ELM4 are the rovers supported for this release. We will focus on the nodes that compose the B3RB.
+CogniPilot Brave currently supports rovers navigating in 2D environments. The B3RB, MELM and ELM4 are the rovers supported for this release. We will focus on the nodes that compose the B3RB.
 The [app/b3rb](https://github.com/CogniPilot/cerebri/tree/25497bf9960c6ca74e98c1709d34c756ac4395a9/app/b3rb) folder contains all nodes.
 
 

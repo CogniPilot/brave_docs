@@ -1,6 +1,6 @@
 # About Cerebri
 
-[Cerebri](https://github.com/cognipilot/cerebri/tree/airy) is a correct by construction autopilot. This software paradigm simplifies the verification and validation task through the consideration of ease of verification during code creation.
+[Cerebri](https://github.com/cognipilot/cerebri/tree/brave) is a correct by construction autopilot. This software paradigm simplifies the verification and validation task through the consideration of ease of verification during code creation.
 
 The verification approach relies on the faithful synthesis of mathematical control laws for a given vehicle dynamic model interacting with a finite state machine. A layered approach is used to ensure robustness of the system.
 

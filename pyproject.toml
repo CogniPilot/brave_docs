@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "airy-docs"
+name = "brave-docs"
 version = "0.1.0"
 description = "CogniPilot Documentation"
 authors = ["Cogni <info@cognipilot.com>"]
 readme = "README.md"
-packages = [{include = "airy_docs"}]
+packages = [{include = "brave_docs"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

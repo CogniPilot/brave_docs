@@ -1,10 +1,10 @@
-site_name: Airy Dev Guide
+site_name: Brave Dev Guide
 site_description: 'Development guides for CogniPilot'
 site_author: 'CogniPilot Foundation'
-site_url: 'https://airy.cognipilot.org'
+site_url: 'https://brave.cognipilot.org'
 
-repo_name: 'CogniPilot/airy_docs'
-repo_url: 'https://github.com/CogniPilot/airy_docs'
+repo_name: 'CogniPilot/brave_docs'
+repo_url: 'https://github.com/CogniPilot/brave_docs'
 
 edit_uri: 'edit/main/docs/'
 

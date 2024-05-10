@@ -21,7 +21,7 @@ Please follow the the [NavQPlus setup guide](../../cranium/compute/navqplus/setu
 
 ## Build and flash the Cerebri image for B3RB
 
-If choosing to use the stable Airy release, make sure Cerebri is on the airy branch.
+If choosing to use the stable Brave release, make sure Cerebri is on the brave branch.
 
 ??? question "How do I know what branch Cerebri is on?"
 
@@ -31,14 +31,14 @@ If choosing to use the stable Airy release, make sure Cerebri is on the airy bra
 	```
 	Which should return:
 	```bash
-	On branch airy
-	Your branch is up to date with 'origin/airy'.
+	On branch brave
+	Your branch is up to date with 'origin/brave'.
 
 	nothing to commit, working tree clean
 	```
 	If it does not show that perform a `git checkout`:
-	```bash title="Checkout airy branch on cerebri."
-	git checkout airy
+	```bash title="Checkout brave branch on cerebri."
+	git checkout brave
 	```
 
 ### Check for updates on Cerebri

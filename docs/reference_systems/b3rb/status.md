@@ -67,7 +67,7 @@ These sounds allow for audio based system diagnosis.
 ??? sound "**Flight of the Alicanto** startup sound signifies the system has booted."
 
     <audio controls="controls">
-      <source type="audio/mp3" src="../sounds/airy.mp3"></source>
+      <source type="audio/mp3" src="../sounds/brave.mp3"></source>
     </audio>
 
 ??? question "I plugged power in but didn't hear the sound, what's wrong?"

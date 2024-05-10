@@ -219,13 +219,16 @@ In the home directory there is a simple helper script that downloads and runs th
 
 ???+ tip "When prompted to choose a release:"
 
-    1. ***airy*** for a stable non-development release.
-    2. ***main*** for active development.
+    1. ***airy*** for a previous stable non-development release.
+    2. ***brave*** for the current stable non-development release.
+    3. ***main*** for active development.
 
 ???+ tip "When prompted to choose a platform to build:"
 
     1. [***b3rb*** is an ackermann based mobile robotic platform.](../../../reference_systems/b3rb/about.md)
     2. ***elm4*** is a differential drive based mobile robotic platform.
+    3. ***melm*** is a differential drive based mobile robotic platform.
+    4. ***rdd2*** is a quadcopter drone.
 
 ??? question "Does CycloneDDS need configuring?"
     The NavQPlus Ubuntu 22.04 with ROS 2 Humble image uses CycloneDDS by default. Make sure to edit the default CycloneDDSConfig.xml to only allow the networks that are desired to connector over when trying to get maximal performance. An example of this is using only the WiFi device `mlan0` to connect to a ROS 2 Domain. To save performance remove the other default included interfaces `eth1` and `usb0` by [deleting those lines](https://github.com/rudislabs/NavQPlus-Resources/blob/36cf2b8e8befcd4265c7027d072b6a70d2148fd0/configs/CycloneDDSConfig.xml#L6-L7) from the NavQPlus local `~/CycloneDDSconfig.xml`.

@@ -17,6 +17,7 @@ You must install the latest official docker.
 
 When cloning the docker repository, choose the name of `<BRANCH>` to be one of:
 * main
+* brave
 * airy
 
 <span style="color:blue">On the Host</span>

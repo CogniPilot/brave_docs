@@ -150,7 +150,7 @@ To use Electrode without ROS 2 on a system use foxglove-studio.
 		Do not use the snap version, only follow instructions for debian linux install.
 
   2. Download the [latest foxglove-cognipilot-joy extension asset `cognipilot.cognipilot-joystick-<version>.zip
-`  for Airy](https://github.com/CogniPilot/foxglove-cognipilot-joy/releases?q=airy&expanded=true).
+`  for Brave](https://github.com/CogniPilot/foxglove-cognipilot-joy/releases?q=brave&expanded=true).
   3. Unzip compressed folder and put it in correct path for operating systems foxglove-studio.	
   On Linux:
   	```bash title="Move and extract extension on Linux:"
@@ -174,7 +174,7 @@ To use Electrode without ROS 2 on a system use foxglove-studio.
 			![Creating an extensions folder in `Users/<User>/.foxglove-studio`.](images/windows_extensions_folder.png "Creating an extensions folder in `Users/<User>/.foxglove-studio`.")
 
 	  4. Go to location where [`cognipilot.cognipilot-joystick-<version>.zip
-`](https://github.com/CogniPilot/foxglove-cognipilot-joy/releases?q=airy&expanded=true) was downloaded `right click the .zip` and select `Extract All...`
+`](https://github.com/CogniPilot/foxglove-cognipilot-joy/releases?q=brave&expanded=true) was downloaded `right click the .zip` and select `Extract All...`
 
 		??? picture "Select `Extract All...` on `cognipilot.cognipilot-joystick-<version>.zip`."
 
@@ -186,7 +186,7 @@ To use Electrode without ROS 2 on a system use foxglove-studio.
 
 			![Provide extraction path to `Users/<User>/.foxglove-studio/extensions`.](images/windows_extract_to.png "Provide extraction path to `Users/<User>/.foxglove-studio/extensions`.")
 
-  4. Download desired [platform layout for foxglove by selecting the `<robot>.json` file on GitHub](https://github.com/CogniPilot/electrode/tree/airy/foxglove_layouts) and pressing the download icon.
+  4. Download desired [platform layout for foxglove by selecting the `<robot>.json` file on GitHub](https://github.com/CogniPilot/electrode/tree/brave/foxglove_layouts) and pressing the download icon.
 
 	??? picture "Example of downloading `b3rb.json` layout for foxglove."
 
