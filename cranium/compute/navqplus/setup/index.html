@@ -1579,7 +1579,7 @@
 <h2 id="step-by-step-overview">Step-by-step overview</h2>
 <ol>
 <li><strong><a href="https://github.com/CogniPilot/navqplus-images/releases/latest">Download the pre-built latest image</a></strong> with 24.04 and ROS 2 Jazzy, exact instructions for that release image are included on the <a href="https://github.com/CogniPilot/navqplus-images/releases/latest">release documentation</a> to use in conjunction with this guide.</li>
-<li>Extract the image <code>navqplus-jazzy-&lt;date&gt;-&lt;commit_hash&gt;.wic</code> from the compressed downloaded file <code>navqplus-jazzy-&lt;date&gt;-&lt;commit_hash&gt;.wic.zstd</code> and flash it to the <a href="#flashing-the-emmc">EMMC</a>, <a href="https://github.com/rudislabs/navqplus-images/releases/latest">exact copy and paste instructions</a> are on the release page.</li>
+<li>Extract the image <code>navqplus-jazzy-&lt;date&gt;-&lt;commit_hash&gt;.wic</code> from the compressed downloaded file <code>navqplus-jazzy-&lt;date&gt;-&lt;commit_hash&gt;.wic.zstd</code> and flash it to the <a href="#flashing-the-emmc">EMMC</a>, <a href="https://github.com/CogniPilot/navqplus-images/releases/latest">exact copy and paste instructions</a> are on the release page.</li>
 <li><a href="#log-in-for-the-first-time">Log in for the first time</a> by connecting to another computer using the <a href="#usb-to-uart-adapter">USB to UART adapter</a>.</li>
 <li><a href="#configuring-wifi-system-hostname-username-or-password">Configure WiFi, System User Name and Password.</a></li>
 <li><a href="#install-cognipilot-through-included-script">Install CogniPilot by running the included installer script.</a></li>
@@ -1728,7 +1728,7 @@
 </details>
 <details class="question">
 <summary>Does CycloneDDS need configuring?</summary>
-<p>The NavQPlus 24.04 with ROS 2 Jazzy image uses CycloneDDS by default. Make sure to edit the default CycloneDDSConfig.xml to only allow the networks that are desired to connector over when trying to get maximal performance. An example of this is using only the WiFi device <code>wlan0</code> to connect to a ROS 2 Domain. To save performance remove the other default included interface <code>end1</code> by <a href="https://github.com/rudislabs/NavQPlus-Resources/blob/36cf2b8e8befcd4265c7027d072b6a70d2148fd0/configs/CycloneDDSConfig.xml#L6-L7">deleting the line</a> from the NavQPlus local <code>~/CycloneDDSconfig.xml</code>.</p>
+<p>The NavQPlus 24.04 with ROS 2 Jazzy image uses CycloneDDS by default. Make sure to edit the default CycloneDDSConfig.xml to only allow the networks that are desired to connector over when trying to get maximal performance. An example of this is using only the WiFi device <code>wlan0</code> to connect to a ROS 2 Domain. To save performance remove the other default included interface <code>end1</code> by <a href="https://github.com/CogniPilot/helmet/blob/13c955e3316c94f5d47f3ead16b668bbec60c130/install/resources/CycloneDDSConfig.xml#L6">deleting the line</a> from the NavQPlus local <code>~/CycloneDDSconfig.xml</code>.</p>
 </details>
 <h2 id="connecting-to-navqplus-over-wifi-or-ethernet">Connecting to NavQPlus over WiFi or Ethernet</h2>
 <p>Once setup of CogniPilot is complete you can connect to the NavQPlus over a local WiFi network or Industrial Ethernet port through SSH.</p>
@@ -1737,7 +1737,7 @@
 <div class="language-bash highlight"><span class="filename">Another way to connect to NavQPlus over ssh depending on network setup:</span><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>ssh<span class="w"> </span>&lt;username&gt;@&lt;hostname&gt;
 </span></code></pre></div>
 <details class="tip">
-<summary>Changing hostname</summary>
+<summary>Don't know the default hostname?</summary>
 <p>Default hostname is <code>imx8mpnavq</code>. The <a href="#change-hostname">hostname can be changed</a> and is suggested to be changed if running multiple NavQPlus on the same network.</p>
 </details>
 
