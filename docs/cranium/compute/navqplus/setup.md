@@ -1,4 +1,4 @@
-# NavQPlus set up for CogniPilot with ROS 2 Humble
+# NavQPlus set up for CogniPilot with ROS 2 Jazzy
 
 ??? tip "Looking for instructions on how to also install on a development computer?"
 
@@ -13,15 +13,15 @@
 
 ## Step-by-step overview
  
-1. **[Download the pre-built latest image](https://github.com/rudislabs/navqplus-images/releases/latest)** with Ubuntu[^1] 22.04 and ROS 2[^3] Humble, exact instructions for that release image are included on the [release documentation](https://github.com/rudislabs/navqplus-images/releases/latest) to use in conjunction with this guide.
-2. Extract the image `navqplus-image-<version>.wic` from the compressed downloaded file `navqplus-image-<version>.wic.zstd` and flash it to the [EMMC](#flashing-the-emmc), [exact copy and paste instructions](https://github.com/rudislabs/navqplus-images/releases/latest) are on the release page.
-3. [Log in for the first time](#log-in-for-the-first-time) by connecting to another computer using the [USB to UART adapter](#usb-to-uart-adapter), [ethernet adapter](#ethernet) or [centermost (USB 2) USB-C® port](#usb-c-gadget-ethernet).[^2]
+1. **[Download the pre-built latest image](https://github.com/CogniPilot/navqplus-images/releases/latest)** with 24.04 and ROS 2 Jazzy, exact instructions for that release image are included on the [release documentation](https://github.com/CogniPilot/navqplus-images/releases/latest) to use in conjunction with this guide.
+2. Extract the image `navqplus-jazzy-<date>-<commit_hash>.wic` from the compressed downloaded file `navqplus-jazzy-<date>-<commit_hash>.wic.zstd` and flash it to the [EMMC](#flashing-the-emmc), [exact copy and paste instructions](https://github.com/CogniPilot/navqplus-images/releases/latest) are on the release page.
+3. [Log in for the first time](#log-in-for-the-first-time) by connecting to another computer using the [USB to UART adapter](#usb-to-uart-adapter).
 4. [Configure WiFi, System User Name and Password.](#configuring-wifi-system-hostname-username-or-password)
-5. [Connect to NavQPlus over WiFi](#connecting-to-navqplus-over-wifi)
-6. [Install CogniPilot by running the included installer script.](#install-cognipilot-through-included-script)
+5. [Install CogniPilot by running the included installer script.](#install-cognipilot-through-included-script)
+6. [Connect to NavQPlus over WiFi or Ethernet](#connecting-to-navqplus-over-wifi-or-ethernet)
 
 ## Flashing the eMMC
-To flash the eMMC on the NavQPlus use the [uuu](https://github.com/rudislabs/navqplus-images/releases/latest) tool as part of the downloadable assests from the release.
+To flash the eMMC on the NavQPlus use the [uuu](https://github.com/CogniPilot/navqplus-images/releases/latest) tool as part of the downloadable assests from the release.
 
 Once `uuu` has downloaded make sure to set it as executable.
 
@@ -47,10 +47,14 @@ Make sure that the NavQPlus is recognized by `uuu`.
 
     ![Found device with uuu.](data/uuu_ls.png "uuu found device")
 
-If it shows that a device is connected, continue to flashing. To flash the board, use the general command below or [copy and paste the specific command](https://github.com/rudislabs/navqplus-images/releases/latest) from the release.
+If it shows that a device is connected, continue to flashing. To flash the board, use the general commands below or [copy and paste the specific command](https://github.com/CogniPilot/navqplus-images/releases/latest) from the release.
+
+```bash title="Extract image:"
+unzstd navqplus-jazzy-<date>-<commit_hash>.wic.zstd
+```
 
 ```bash title="Use uuu to flash eMMC with image:"
-sudo ./uuu -b emmc_all navqplus-image-<version>.bin-flash_evk navqplus-image-<version>.wic
+sudo ./uuu -b emmc_all navqplus-jazzy-<date>-<commit_hash>.bin-flash_evk navqplus-jazzy-<date>-<commit_hash>.wic
 ```
 
 Once this process has finished, make sure that the flash was successful. If so, configure the [boot switches](#boot-switches) to boot from eMMC.
@@ -77,9 +81,9 @@ NavQPlus can be configured to boot from either SD card or eMMC. It also has a fl
 
 ## Log in for the first time
 
-Power on the NavQPlus by plugging in a USB-C® cable to the centermost (USB 2) USB-C® port or the 5 pin JST-GH power port if not powering over the centermost (USB 2) USB-C® port. NavQPlus will boot, and display that it is fully booted with the status LEDs on board. The 3 LEDs by the USB1 port should be on, as well as two LEDs next to the CAN bus connectors.
+Power on the NavQPlus by either plugging in a USB-C® cable to the centermost (USB 2) USB-C® port or the 5 pin JST-GH power port with 6-24V if **NOT** powering over the centermost (USB 2) USB-C® port. NavQPlus will boot, and display that it is fully booted with the status LEDs on the board. The 3 LEDs by the USB1 port should be on, as well as two LEDs next to the CAN bus connectors.
 
-To log into NavQPlus, choose between using the [included USB to UART adapter](#usb-to-uart-adapter), [Industrial Ethernet](#ethernet), or [USB-C® with gadget ethernet mode](#usb-c-gadget-ethernet). The default username/password combo is as follows:
+To log into the NavQPlus, use the [included USB to UART adapter](#usb-to-uart-adapter). The default username/password combo is as follows:
 
 **Username: user**
 
@@ -93,44 +97,6 @@ screen /dev/ttyUSB<#> 115200
 ```
 ??? tip "How to close cleanly out of `screen`."
     To exit `screen` cleanly when done press simultaneously `Ctrl Shift A` followed by typing `k` then `y`.
-
-### Ethernet
-Connect the included IX Industrial Ethernet cable to NavQPlus, and connect the RJ45 connector to another computer, switch, or router on the local network. Log into NavQPlus over SSH.
-
-```bash title="Connect to NavQPlus over ssh:"
-ssh <username>@<hostname>.local
-```
-
-```bash title="Another way to connect to NavQPlus over ssh depending on network setup:"
-ssh <username>@<hostname>
-```
-
-??? tip "Changing hostname"
-    Default hostname is `imx8mpnavq`. The [hostname can be changed](#change-hostname) and is suggested to be changed if running multiple NavQPlus on the same network.
-
-### USB-C® Gadget Ethernet
-The IP address of the `usb0` network interface on NavQPlus is statically assigned to 192.168.186.3. To use the USB-C® gadget ethernet to connect to the NavQPlus, assign a static IP on the connecting computers existing gadget ethernet interface. The network configuration is as follows:
-
-**IP Address:** 192.168.186.2
-
-**Network Mask:** 255.255.255.0
-
-??? picture "Adding the network configuration to Network Manager."
-
-    ![Network Manager connection profile.](data/usb_network.png "USB-C® gadget ethernet network connection")
-
-Once USB-C® gadget ethernet interface is set up on the connected computer, connect over SSH.
-
-```bash title="Connect to NavQPlus over ssh:"
-ssh <username>@<hostname>.local
-```
-
-```bash title="Another way to connect to NavQPlus over ssh depending on network setup:"
-ssh <username>@<hostname>
-```
-
-??? tip "Changing hostname"
-    Default hostname is `imx8mpnavq`. The [hostname can be changed](#change-hostname) and is suggested to be changed if running multiple NavQPlus on the same network.
 
 ## Configuring WiFi, System Hostname, Username or Password
 
@@ -181,25 +147,11 @@ mv /home/user /home/<new_username>
 passwd
 ```
 
-## Connecting to NavQPlus over WiFi
-Once setup to connect over a local WiFi network, SSH into the NavQPlus.
-
-```bash title="Connect to NavQPlus over ssh:"
-ssh <username>@<hostname>.local
-```
-
-```bash title="Another way to connect to NavQPlus over ssh depending on network setup:"
-ssh <username>@<hostname>
-```
-
-??? tip "Changing hostname"
-    Default hostname is `imx8mpnavq`. The [hostname can be changed](#change-hostname) and is suggested to be changed if running multiple NavQPlus on the same network.
-
 ## Install CogniPilot through included script
 
-Included in the image is an installation script that auto-updates when run. Before running make sure that the NavQPlus is connected to the internet on a network that allows it to download from github and Ubuntu servers.
+Included in the image is an installation script that auto-updates when run. Before running make sure that the NavQPlus is connected to the internet on a network that allows it to download from github and apt servers.
 
-In the home directory there is a simple helper script that downloads and runs the latest [CogniPilot NavQPlus installer](https://github.com/CogniPilot/helmet/blob/main/install/navqplus_install.sh).
+In the home directory there is a simple helper script that downloads and runs the latest CogniPilot NavQPlus installer.
 
 ??? tip "Cloning with ssh keys:"
     If you want to use [SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) with github on the NavQPlus you must first add or create them on the device. Otherwise you will need to answer `n` when asked to clone using already setup github ssh keys.
@@ -219,21 +171,28 @@ In the home directory there is a simple helper script that downloads and runs th
 
 ???+ tip "When prompted to choose a release:"
 
-    1. ***airy*** for a previous stable non-development release.
-    2. ***brave*** for the current stable non-development release.
-    3. ***main*** for active development.
+    1. ***brave*** for the current stable non-development release.
+    2. ***main*** for active development.
 
 ???+ tip "When prompted to choose a platform to build:"
 
     1. [***b3rb*** is an ackermann based mobile robotic platform.](../../../reference_systems/b3rb/about.md)
-    2. ***elm4*** is a differential drive based mobile robotic platform.
     3. ***melm*** is a differential drive based mobile robotic platform.
     4. ***rdd2*** is a quadcopter drone.
 
 ??? question "Does CycloneDDS need configuring?"
-    The NavQPlus Ubuntu 22.04 with ROS 2 Humble image uses CycloneDDS by default. Make sure to edit the default CycloneDDSConfig.xml to only allow the networks that are desired to connector over when trying to get maximal performance. An example of this is using only the WiFi device `mlan0` to connect to a ROS 2 Domain. To save performance remove the other default included interfaces `eth1` and `usb0` by [deleting those lines](https://github.com/rudislabs/NavQPlus-Resources/blob/36cf2b8e8befcd4265c7027d072b6a70d2148fd0/configs/CycloneDDSConfig.xml#L6-L7) from the NavQPlus local `~/CycloneDDSconfig.xml`.
+    The NavQPlus 24.04 with ROS 2 Jazzy image uses CycloneDDS by default. Make sure to edit the default CycloneDDSConfig.xml to only allow the networks that are desired to connector over when trying to get maximal performance. An example of this is using only the WiFi device `wlan0` to connect to a ROS 2 Domain. To save performance remove the other default included interface `end1` by [deleting the line](https://github.com/CogniPilot/helmet/blob/13c955e3316c94f5d47f3ead16b668bbec60c130/install/resources/CycloneDDSConfig.xml#L6) from the NavQPlus local `~/CycloneDDSconfig.xml`.
 
+## Connecting to NavQPlus over WiFi or Ethernet
+Once setup of CogniPilot is complete you can connect to the NavQPlus over a local WiFi network or Industrial Ethernet port through SSH.
 
-[^1]: Ubuntu is a registered trademark of Canonical Ltd.
-[^2]: USB-C® is a trademark of USB Implementers Forum.
-[^3]: ROS 2 is governed by Open Robotics.
+```bash title="Connect to NavQPlus over ssh:"
+ssh <username>@<hostname>.local
+```
+
+```bash title="Another way to connect to NavQPlus over ssh depending on network setup:"
+ssh <username>@<hostname>
+```
+
+??? tip "Don't know the default hostname?"
+    Default hostname is `imx8mpnavq`. The [hostname can be changed](#change-hostname) and is suggested to be changed if running multiple NavQPlus on the same network.

@@ -27,7 +27,6 @@ CogniPilot is not aiming to re-invent an opensource autopilot that can be a drop
 
 ### Rover
    * [B3RB](./reference_systems/b3rb/about.md)
-   * ELM4
    * MELM
 ### Multirotor
    * RDD2

@@ -7,10 +7,10 @@
 
 ## Requirements
 
-* [Ubuntu 22.04 host environment.](https://ubuntu.com/download/desktop)
+* [Ubuntu 24.04 host environment.](https://ubuntu.com/download/desktop)
 * Stable internet connection for downloading and installing packages.
 
-This may work on other environments but only Ubuntu 22.04 is officially supported.
+This may work on other environments but only Ubuntu 24.04 is officially supported.
 
 ## Optional before installing
 ### Setup SSH keys on host and GitHub
@@ -41,9 +41,8 @@ chmod a+x ~/cognipilot/installer/install_cognipilot.sh
 
 ???+ tip "When prompted to choose a release:"
 
-    1. ***airy*** for a previous stable non-development release.
-    2. ***brave*** for the current stable non-development release.
-    3. ***main*** for active development.
+    1. ***brave*** for the current stable non-development release.
+    2. ***main*** for active development.
 
 ???+ tip "When prompted to choose installer type select **1** for **native**:"
 
@@ -53,7 +52,7 @@ chmod a+x ~/cognipilot/installer/install_cognipilot.sh
 
 ???+ tip "When prompted to choose whether or not to use ssh-keys:"
 
-    * ***y*** to [clone with ssh keys](#setup-ssh-keys-on-host-and-github-optional), best for development work but only select if ssh keys are already present and setup with GitHub.
+    * ***y*** to [clone with ssh keys](#setup-ssh-keys-on-host-and-github), best for development work but only select if ssh keys are already present and setup with GitHub.
     * ***n*** to clone with https, best for users who do not plan to make modifications or develop.
 
 
@@ -75,13 +74,14 @@ build_workspace
 
 ???+ tip "When prompted to choose whether or not to use ssh-keys:"
 
-    * ***y*** to [clone with ssh keys](#setup-ssh-keys-on-host-and-github-optional), best for development work but only select if ssh keys are already present and setup with GitHub.
+    * ***y*** to [clone with ssh keys](#setup-ssh-keys-on-host-and-github), best for development work but only select if ssh keys are already present and setup with GitHub.
     * ***n*** to clone with https, best for users who do not plan to make modifications or develop.
 
 ???+ tip "When prompted to choose a platform to build:"
-    
+
     1. ***b3rb*** is an ackermann based mobile robotic platform with simulation.
-    2. ***elm4*** is a differential drive based mobile robotic platform with simulation.
+    2. ***melm*** is a differential drive based mobile robotic platform with simulation.
+    3. ***rdd2*** is a quadcopter based mobile robotic platform with simulation.
 
 
 ## Platforms
@@ -91,12 +91,14 @@ Currently supported platforms in this release are B3RB and ELM4.
 ### Using a real platform:
 
 * [**B3RB** hardware guide.](../reference_systems/b3rb/setup.md)
-* **ELM4** hardware guide coming soon.
+* **MELM** hardware guide coming soon.
+* **RDD2** hardware guide coming soon.
 
 ### Simulating a platform:
 
 * [**B3RB** simulation guide.](../reference_systems/b3rb/simulation.md)
-* **ELM4** simulation guide coming soon.
+* **MELM** simulation guide coming soon.
+* **RDD2** simulation guide coming soon.
 
 ## Convenience Scripts
 ### docs script
@@ -114,11 +116,12 @@ docs
 
 ???+ tip "When prompted to choose whether or not to use ssh-keys:"
 
-    * ***y*** to [clone with ssh keys](#setup-ssh-keys-on-host-and-github-optional), best if contributing to the documentation but only select if ssh keys are already present and setup with GitHub.
+    * ***y*** to [clone with ssh keys](#setup-ssh-keys-on-host-and-github), best if contributing to the documentation but only select if ssh keys are already present and setup with GitHub.
     * ***n*** to clone with https, best for users who do not plan to contribute and only want a local viewer.
 
 ???+ tip "When prompted to choose a doc to build:"
-    
+
+    1. ***airy*** is the [airy developers guide site (airy.cognipilot.org)](https://airy.cognipilot.org).
     1. ***brave*** is the [brave developers guide site (brave.cognipilot.org)](https://brave.cognipilot.org).
     2. ***overview*** is the [release overview site (cognipilot.org)](https://cognipilot.org).
 

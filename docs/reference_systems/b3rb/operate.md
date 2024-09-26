@@ -18,7 +18,7 @@ Choose and run the desired [Electrode backend for B3RB](./electrode.md).
 
 ## Launching `b3rb_bringup` on the NavQPlus
 
-Shell into the NavQPlus ([typically over WiFi](../../cranium/compute/navqplus/setup.md#connecting-to-navqplus-over-wifi)).
+Shell into the NavQPlus ([typically over WiFi](../../cranium/compute/navqplus/setup.md#connecting-to-navqplus-over-wifi-or-ethernet)).
 
 Run the B3RB launch file.
 

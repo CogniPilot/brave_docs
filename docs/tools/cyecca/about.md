@@ -106,7 +106,7 @@ def generate_code(eqs: dict, filename, dest_dir: str, **kwargs):
 ```
 
 1. Without mex which is used for Matlab.
-2. Without cpp since [Cerebri is focused on MISRA C](../../cerebri/about.md#layers-of-verificaiton-and-validation).
+2. Without cpp since [Cerebri is focused on MISRA C](../../cerebri/about.md#layers-of-verification-and-validation).
 3. Without a main function, just use functions in a library.
 4. With a header for use in the library.
 5. Without mem, as internal memory is not necessary for these routines.
